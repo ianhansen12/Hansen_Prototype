@@ -1,0 +1,294 @@
+fileFormatVersion: 2
+guid: f7c8e6fc95b95374096b5d84d233f74a
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Big_Flower
+    100002: Big_Flower1
+    100004: Big_Flower2
+    100006: Big_flower2
+    100008: Big_Flower3
+    100010: Big_Flower4
+    100012: Big_flower4
+    100014: BigFlower
+    100016: BigFlower1
+    100018: BigFlower2
+    100020: BigFlower3
+    100022: BigFlower4
+    100024: BigFlower5
+    100026: BigFlower6
+    100028: BigFlower7
+    100030: Bulb
+    100032: Bulb 1
+    100034: Bulb1
+    100036: Bulb2
+    100038: Chamomile_Flowers
+    100040: //RootNode
+    100042: Ginseng_Flowers
+    100044: Petals
+    100046: Petals1
+    100048: Petals2
+    100050: Petals3
+    100052: polySurface111
+    100054: polySurface151
+    100056: polySurface151 1
+    100058: polySurface151 2
+    100060: polySurface151 3
+    100062: polySurface151 4
+    100064: polySurface152
+    100066: polySurface152 1
+    100068: polySurface152 2
+    100070: polySurface152 3
+    100072: polySurface152 4
+    100074: polySurface23
+    100076: polySurface29
+    100078: polySurface46
+    100080: polySurface51
+    100082: polySurface56
+    100084: polySurface68
+    100086: polySurface73
+    100088: polySurface74
+    100090: polySurface91
+    100092: polySurface95
+    100094: Sage_Flowers
+    100096: Small_Flower1
+    100098: Small_Flower2
+    100100: Stem1
+    400000: Big_Flower
+    400002: Big_Flower1
+    400004: Big_Flower2
+    400006: Big_flower2
+    400008: Big_Flower3
+    400010: Big_Flower4
+    400012: Big_flower4
+    400014: BigFlower
+    400016: BigFlower1
+    400018: BigFlower2
+    400020: BigFlower3
+    400022: BigFlower4
+    400024: BigFlower5
+    400026: BigFlower6
+    400028: BigFlower7
+    400030: Bulb
+    400032: Bulb 1
+    400034: Bulb1
+    400036: Bulb2
+    400038: Chamomile_Flowers
+    400040: //RootNode
+    400042: Ginseng_Flowers
+    400044: Petals
+    400046: Petals1
+    400048: Petals2
+    400050: Petals3
+    400052: polySurface111
+    400054: polySurface151
+    400056: polySurface151 1
+    400058: polySurface151 2
+    400060: polySurface151 3
+    400062: polySurface151 4
+    400064: polySurface152
+    400066: polySurface152 1
+    400068: polySurface152 2
+    400070: polySurface152 3
+    400072: polySurface152 4
+    400074: polySurface23
+    400076: polySurface29
+    400078: polySurface46
+    400080: polySurface51
+    400082: polySurface56
+    400084: polySurface68
+    400086: polySurface73
+    400088: polySurface74
+    400090: polySurface91
+    400092: polySurface95
+    400094: Sage_Flowers
+    400096: Small_Flower1
+    400098: Small_Flower2
+    400100: Stem1
+    2100000: lambert8
+    2100002: lambert1
+    2100004: ChamomileFlower
+    2100006: SageStemColor
+    2100008: SageFlower
+    2100010: StemColor1
+    2100012: GinsengBulb1
+    2100014: Petals1Color
+    2300000: BigFlower1
+    2300002: BigFlower2
+    2300004: BigFlower3
+    2300006: BigFlower4
+    2300008: BigFlower5
+    2300010: BigFlower6
+    2300012: BigFlower7
+    2300014: Bulb
+    2300016: Bulb 1
+    2300018: Bulb1
+    2300020: Bulb2
+    2300022: Petals
+    2300024: Petals1
+    2300026: Petals2
+    2300028: Petals3
+    2300030: polySurface111
+    2300032: polySurface151
+    2300034: polySurface151 1
+    2300036: polySurface151 2
+    2300038: polySurface151 3
+    2300040: polySurface151 4
+    2300042: polySurface152
+    2300044: polySurface152 1
+    2300046: polySurface152 2
+    2300048: polySurface152 3
+    2300050: polySurface152 4
+    2300052: polySurface23
+    2300054: polySurface46
+    2300056: polySurface56
+    2300058: polySurface68
+    2300060: polySurface74
+    2300062: polySurface91
+    3300000: BigFlower1
+    3300002: BigFlower2
+    3300004: BigFlower3
+    3300006: BigFlower4
+    3300008: BigFlower5
+    3300010: BigFlower6
+    3300012: BigFlower7
+    3300014: Bulb
+    3300016: Bulb 1
+    3300018: Bulb1
+    3300020: Bulb2
+    3300022: Petals
+    3300024: Petals1
+    3300026: Petals2
+    3300028: Petals3
+    3300030: polySurface111
+    3300032: polySurface151
+    3300034: polySurface151 1
+    3300036: polySurface151 2
+    3300038: polySurface151 3
+    3300040: polySurface151 4
+    3300042: polySurface152
+    3300044: polySurface152 1
+    3300046: polySurface152 2
+    3300048: polySurface152 3
+    3300050: polySurface152 4
+    3300052: polySurface23
+    3300054: polySurface46
+    3300056: polySurface56
+    3300058: polySurface68
+    3300060: polySurface74
+    3300062: polySurface91
+    4300000: BigFlower1
+    4300002: BigFlower2
+    4300004: BigFlower3
+    4300006: BigFlower4
+    4300008: BigFlower5
+    4300010: BigFlower6
+    4300012: BigFlower7
+    4300014: polySurface151
+    4300016: polySurface152
+    4300018: polySurface151
+    4300020: polySurface152
+    4300022: polySurface151
+    4300024: polySurface152
+    4300026: polySurface151
+    4300028: polySurface152
+    4300030: polySurface151
+    4300032: polySurface152
+    4300034: polySurface23
+    4300036: Bulb1
+    4300038: Petals1
+    4300040: polySurface68
+    4300042: Petals3
+    4300044: polySurface56
+    4300046: polySurface46
+    4300048: Petals2
+    4300050: Bulb2
+    4300052: polySurface74
+    4300054: Bulb
+    4300056: polySurface91
+    4300058: polySurface111
+    4300060: Petals
+    4300062: Bulb
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

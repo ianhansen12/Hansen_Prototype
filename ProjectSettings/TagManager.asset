@@ -10,6 +10,9 @@ TagManager:
   - Sage
   - Ginseng
   - Chamomile
+  - Bulb
+  - ded
+  - DeadBulb
   layers:
   - Default
   - TransparentFX

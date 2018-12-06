@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Waterfill : MonoBehaviour {
     public Renderer rend;
-    public bool isBoiled;
-    public int timer;
+    private Material[] materials;
+    private bool isBoiled;
+    private bool teaPresent;
+    private int timer;
 	// Use this for initialization
 	void Start () {
     }
@@ -16,6 +18,7 @@ public class Waterfill : MonoBehaviour {
     public void waterappear()
     {
         rend = gameObject.GetComponent<Renderer>();
+        materials = rend.materials;
         Debug.Log("Water Appears");
         rend.enabled = true;
         
@@ -29,17 +32,23 @@ public class Waterfill : MonoBehaviour {
 
         if (col.CompareTag("Fire"))
         {
-            //timer 
             Debug.Log("Boiling has begun");
             InvokeRepeating("boiler", 1f, 1f);
          }
+        if (col.CompareTag("DeadBulb"))
+        {
+            Debug.Log("Tea");
+            teaPresent = true;
+        }
     } 
     void boiler()
     {
         timer++;
-        if (timer == 3)
-    {
-        Debug.Log("Yeet");
-    }
+        if (timer == 10 && teaPresent == true)
+        {
+            Debug.Log("Yeet");
+            rend.material = materials[1];
+            teaPresent = false;
+        }
     }
 }
