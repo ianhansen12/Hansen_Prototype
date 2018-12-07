@@ -7,7 +7,8 @@ public class Waterfill : MonoBehaviour {
     private Material[] materials;
     private bool isBoiled;
     private bool teaPresent;
-    private int timer;
+    private bool fireready;
+    private float countdown;
 	// Use this for initialization
 	void Start () {
     }
@@ -20,8 +21,8 @@ public class Waterfill : MonoBehaviour {
         rend = gameObject.GetComponent<Renderer>();
         materials = rend.materials;
         Debug.Log("Water Appears");
+        rend.material = materials[0];
         rend.enabled = true;
-        
     }
     void OnTriggerEnter(Collider col)
     {
@@ -32,23 +33,52 @@ public class Waterfill : MonoBehaviour {
 
         if (col.CompareTag("Fire"))
         {
-            Debug.Log("Boiling has begun");
-            InvokeRepeating("boiler", 1f, 1f);
-         }
+            fireready = true;
+            // InvokeRepeating("boiler", 1f, 1f);
+            StartCoroutine(StartBoil());
+        }
         if (col.CompareTag("DeadBulb"))
         {
             Debug.Log("Tea");
             teaPresent = true;
         }
     } 
-    void boiler()
+    void OnTriggerExit(Collider col)
     {
-        timer++;
-        if (timer == 10 && teaPresent == true)
+        if (col.CompareTag("Fire"))
+        {
+            fireready = false;
+            Debug.Log("No More boily boily");
+        }
+    }
+    //void boiler()
+   // {
+   //     Debug.Log("Boiling has begun");
+   //
+   //     if (timer == 10 && teaPresent == true && fireready == true)
+   //     {
+   //         Debug.Log("Yeet");
+   //         rend.material = materials[1];
+    //        teaPresent = false;
+   //         timer = 0;
+   //     }
+   //     timer++;
+   // }
+    public IEnumerator StartBoil(float countdownValue = 10)
+    {
+        countdown = countdownValue;
+        while (countdown > 0)
+        {
+            Debug.Log("Countdown: " + countdown);
+            yield return new WaitForSeconds(1.0f);
+            countdown--;
+        }
+        if (fireready == true && teaPresent == true)
         {
             Debug.Log("Yeet");
             rend.material = materials[1];
             teaPresent = false;
         }
+
     }
 }
