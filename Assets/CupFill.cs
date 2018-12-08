@@ -16,6 +16,7 @@ public class CupFill : MonoBehaviour {
     float countdown;
     public GameObject skylightobj;
     private Light skyLight;
+    private bool timer;
    // public Color newColor = new Color(0.9339f, 0.9011f, 0.6f, 1f);
    // public Color newColor1 = new Color(0.7641f, 0.3207f, 0.3207f, 1f);
    // public Color newColor2 = new Color(0.8721f, 0.6f, 0.8773f, 1f);
@@ -98,7 +99,7 @@ public class CupFill : MonoBehaviour {
             fullrend.material = materials[0];
         }
     }
-    public IEnumerator StartCountdown(float countdownValue = 60)
+    public IEnumerator StartCountdown(float countdownValue = 30)
     {
         countdown = countdownValue;
         while (countdown > 0)
@@ -108,23 +109,26 @@ public class CupFill : MonoBehaviour {
             countdown--;
         }
         floorRend.material.color = new Color(0.4450f, 0.6226f, 0.3083f, 1f);
-        countdownValue = 60;
+        countdownValue = 30;
     }
-    public IEnumerator StartLightChange(float countdownValue = 30)
+    public IEnumerator StartLightChange(float countdownValue = 15)
     {
         countdown = countdownValue;
         while (countdown > 0)
         {
             Debug.Log("Countdown: " + countdown);
-            skyLight.intensity = skyLight.intensity * .95f;
+            skyLight.intensity = skyLight.intensity * .9f;
             yield return new WaitForSeconds(1.0f);
             countdown--;
-            
+            timer = true;
 
         }
-        StartCoroutine(StartLightChangeBack());
+        if (timer == true)
+        {
+            StartCoroutine(StartLightChangeBack());
+        }
     }
-    public IEnumerator StartLightChangeBack(float countdownValue = 30)
+    public IEnumerator StartLightChangeBack(float countdownValue = 15)
     {
         countdown = countdownValue;
         while (countdown > 0)
@@ -132,7 +136,7 @@ public class CupFill : MonoBehaviour {
             if (skyLight.intensity != 0.9f)
             {
                 Debug.Log("Countdown: " + countdown);
-                skyLight.intensity = skyLight.intensity * 1.05f;
+                skyLight.intensity = skyLight.intensity * 1.1f;
             }
             
             yield return new WaitForSeconds(1.0f);

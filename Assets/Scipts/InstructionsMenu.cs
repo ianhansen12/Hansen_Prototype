@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class InstructionsMenu : MonoBehaviour
@@ -26,6 +27,15 @@ public class InstructionsMenu : MonoBehaviour
         if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger))
         {
                 Instructions.SetActive(false);
+        }
+        if (OVRInput.Get(OVRInput.Button.One))
+        {
+            SceneManager.LoadScene(1);
+        }
+        if (OVRInput.Get(OVRInput.Button.Two))
+        {
+            //Quit
+            Application.Quit();
         }
     }
 }
